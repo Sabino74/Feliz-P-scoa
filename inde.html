@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="shortcut icon" href="assets/My-logo-MS.ico" type="image/x-icon">
+  <title>Feliz Páscoa</title>
+</head>
+<body>
+  <div class="container">
+    <a class="prev" href="#" onclick="addSlides(-1)">
+      <span>&#10094;</span>
+      <span class="prev-text">Voltar</span>
+    </a>
+    <div>
+      <div class="slides fade">
+        <img src="./assets/1.png" />
+        <h2 class="title">CRISTO VIVE!</h2>
+        <p class="content">Que a ressurreição fortaleça sua fé e ilumine seu caminho.</p>
+      </div>
+      <div class="slides fade">
+        <img src="./assets/2.png" />
+        <h2 class="title">FÉ E GRATIDÃO!</h2>
+        <p class="content">A verdadeira Páscoa é vida nova em Jesus.</p>
+      </div>
+      <div class="slides fade">
+        <img src="./assets/5.png" />
+        <h2 class="title">FELIZ PÁSCOA!</h2>
+        <p class="content">Tempo de renascer, perdoar e espalhar o bem. Uma doce Páscoa pra você!<br/><br/>
+          <span>(Marquinhos Sabino)</span>
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <button class="button" onclick="addSlides(1)">Próximo</button>
+      <div class="dot-box">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </div>
+  <script src="handle.js"></script>
+</body>
+</html>
